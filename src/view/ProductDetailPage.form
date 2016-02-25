@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.ProductDetailPage">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="120" y="20" width="685" height="535"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="a5fa2" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-526345"/>
+          <enabled value="true"/>
+        </properties>
+        <border type="line" title="Product Detail" title-justification="2">
+          <font name="Agency FB" size="18"/>
+          <title-color color="-16777216"/>
+        </border>
+        <children>
+          <grid id="cc32a" binding="imagePath" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="0" row-span="2" col-span="1" vsize-policy="3" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="200" height="-1"/>
+                <preferred-size width="300" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <component id="3e1c5" class="javax.swing.JLabel" binding="productName">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Agency FB" size="36"/>
+              <text value="Product Name"/>
+            </properties>
+          </component>
+          <tabbedpane id="b3e4c" binding="tabbedPane1" default-binding="true">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8349712"/>
+              <font name="Agency FB" size="18"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="17c0a" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Description"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="9bdff">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="61817" class="javax.swing.JTextPane" binding="description">
+                        <constraints/>
+                        <properties>
+                          <editable value="false"/>
+                          <enabled value="true"/>
+                          <font name="Agency FB" size="20"/>
+                          <text value="Some product description..."/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+          <grid id="8b6f4" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="250" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <enabled value="false"/>
+            </properties>
+            <border type="bevel-lowered"/>
+            <children>
+              <component id="807ef" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Agency FB" size="22"/>
+                  <text value="Quantity"/>
+                </properties>
+              </component>
+              <component id="92e97" class="javax.swing.JButton" binding="addToCartButton" default-binding="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12358928"/>
+                  <enabled value="true"/>
+                  <font name="Arial" size="18"/>
+                  <foreground color="-1"/>
+                  <hideActionText value="true"/>
+                  <icon value="resources/add.png"/>
+                  <text value="Add To Cart"/>
+                </properties>
+              </component>
+              <component id="9a55b" class="javax.swing.JButton" binding="buyNowButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1040719"/>
+                  <font name="Arial" size="18"/>
+                  <foreground color="-1"/>
+                  <hideActionText value="true"/>
+                  <icon value="resources/money.png"/>
+                  <text value="Buy Now"/>
+                </properties>
+              </component>
+              <component id="87920" class="javax.swing.JLabel" binding="sellingPrice">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Agency FB" size="36"/>
+                  <text value="$500.23"/>
+                </properties>
+              </component>
+              <component id="10775" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Agency FB" size="36"/>
+                  <text value="Price:"/>
+                </properties>
+              </component>
+              <component id="c2532" class="javax.swing.JSlider" binding="quantity">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <maximum value="5"/>
+                  <minimum value="1"/>
+                  <value value="1"/>
+                </properties>
+              </component>
+              <component id="d51d0" class="javax.swing.JLabel" binding="jsliderLabel">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Agency FB" size="18"/>
+                  <text value="1 out of 5"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="ef6b1" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bodoni MT" size="18"/>
+              <text value="Seller:"/>
+            </properties>
+          </component>
+          <vspacer id="c4fb2">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="fd12c" class="javax.swing.JLabel" binding="username">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bodoni MT" size="18" style="2"/>
+              <foreground color="-15072239"/>
+              <text value="MichealPerez"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

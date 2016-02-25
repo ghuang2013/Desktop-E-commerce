@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - ghuang2013@lamp.cse.fau.edu/" uuid="5c9a7ebd-eba7-48a0-b379-2d3947d839fc">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <schema name="" catalog="nested_query"/>
+    <table name="catalog" schema="" catalog="nested_query" type="TABLE"/>
+    <table name="part" schema="" catalog="nested_query" type="TABLE"/>
+    <table name="supplier" schema="" catalog="nested_query" type="TABLE"/>
+  </data-source>
+  <data-source name="MySQL - @localhost" uuid="d7fa11ef-ff44-4b30-a061-0de152287e39">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
